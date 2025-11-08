@@ -1,0 +1,1182 @@
+
+/* A reset for consistent spacing */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Basic Page Styling */
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+    color: #000000;
+    background-color: #fff;
+    line-height: 1.6;
+    min-height: 100vh; /* Ensures footer elements can be placed relative to viewport */
+}
+
+/* Top Banner Style */
+.top-banner {
+    background-color: #000000;
+    color: #ffffff;
+    text-align: center;
+    padding: 6px 0;
+    font-size: 15px;
+    letter-spacing: 0.5px;
+    position: relative;
+}
+.top-banner a {
+    color: #fff;
+    text-decoration: none;
+}
+.top-banner .close-x {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+}
+
+/* Header/Navigation Style */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.logo {
+    color: #000;
+    font-family: Georgia, serif; /* Using a strong serif font for the logo "EK" */
+    font-size: 28px;
+    font-weight: 700;
+    letter-spacing: -2px;
+}
+
+.nav-links {
+    display: flex;
+    gap: 40px;
+    align-items: center;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #000;
+    font-size: 14px;
+    text-transform: capitalize;
+}
+
+.contact-link {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-weight: 600;
+}
+.contact-icon {
+    border: 1px solid #000;
+    width: 16px;
+    height: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 10px;
+    line-height: 1;
+}
+
+/* Main Content Layout (Two Columns) */
+.main-content {
+    display: flex;
+    max-width: 1400px;
+    margin: 40px auto;
+    padding: 0 40px;
+    gap: 80px; /* Space between text and images */
+}
+
+.text-column {
+    flex: 1;
+    max-width: 45%; /* Text takes less than half the width */
+    padding-top: 50px; /* Vertical alignment with images */
+}
+
+.image-column {
+    flex: 1;
+    display: flex;
+    gap: 30px; /* Space between the two product images */
+    align-items: flex-start;
+      border-color: 15px  black;
+}
+
+/* Typography for Name */
+.title {
+    color: #000;
+    font-family: 'Playfair Display', Georgia, serif; /* Strong serif font mimic */
+    font-size: 10vw; /* Very large and responsive font size */
+    line-height: 0.85;
+    margin-bottom: 20px;
+    font-weight: 400;
+}
+
+/* Tagline Style */
+.tagline {
+    font-family: Georgia, serif;
+    font-size: 18px;
+    font-style: italic;
+    font-weight: 300;
+    color: #000;
+}
+
+/* Image Placeholder Styles (for visual structure and spacing) */
+.product-image {
+    width: 50%; /* Each image takes half of the image column */
+    height: 600px; /* Fixed height for visual structure */
+    background-color: #f0f0f0; /* Light gray placeholder background */
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px 40px;
+    background-size: cover;
+    background-position: center;
+
+    /* Note: In a real implementation, you would use <img> tags, 
+       but here we use background images for placement simulation. */
+}
+
+/* Styling to simulate the look and offset of the second image */
+.image-salt {
+    border-color: 15px  black;
+    background-image: url('In-App-Advertising.jpg');
+    /* Specific styling for the first image, if any */
+}
+.image-babor {
+    border-color: 15px black;
+    background-image: url('In-App-Advertising.jpg');
+    transform: scale(1.1) translateY(50px); /* Makes it appear larger and offset lower */
+    z-index: 2; /* Ensures it is visually dominant */
+}
+
+/* Scroll Indicator (Bottom Right) */
+.scroll-indicator {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    width: 10px;
+    height: 10px;
+    background-color: #000;
+    border-radius: 50%;
+    z-index: 100;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* --- Global Styles and Typography --- */
+body {
+    /* Using a system serif font (like Times New Roman or Georgia) to match the elegant look */
+    font-family: 'Times New Roman', Times, serif; 
+    margin: 0;
+    padding: 0;
+ /* Dark gray for main text */
+    line-height: 1.6;
+    background-color: #fff;
+}
+
+/* Container for main layout (Sidebar + Content) */
+.container {
+    display: flex;
+    max-width: 1400px; /* Limit max width for a cleaner look */
+    margin: 0 auto;
+}
+
+/* --- Sidebar Styling --- */
+.sidebar {
+    width: 250px; /* Fixed width for the sidebar */
+    padding-left: 50px; /* Spacing from the edge */
+    padding-top: 100px;
+    flex-shrink: 0; /* Prevents the sidebar from shrinking */
+    border-right: 1px solid #eee; /* Light gray visual separator */
+}
+
+.sidebar nav {
+    margin-bottom: 50px;
+}
+
+.sidebar .section-title {
+    text-transform: uppercase;
+    font-size: 0.8em;
+    letter-spacing: 1px;
+    margin-bottom: 1.5em;
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.sidebar li {
+    margin-bottom: 15px;
+}
+
+.sidebar a {
+    text-decoration: none;
+    color: inherit;
+    font-size: 1em;
+    display: block;
+}
+
+.sidebar a:hover {
+    color: #f18080;
+}
+
+/* Contact Link Styling */
+.contact-area {
+    margin-top: 150px; /* Space it down */
+}
+
+.contact-link {
+    display: flex;
+    align-items: center;
+    font-weight: 500;
+    font-size: 1em;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    color: #f1aeae;
+    text-decoration: none;
+}
+
+.contact-link .arrow {
+    margin-left: 5px;
+    font-size: 1.5em;
+    line-height: 1;
+}
+
+
+/* --- Main Content Styling --- */
+.content {
+    flex-grow: 1;
+    padding: 50px 80px 50px 80px; /* Spacing around the main content */
+}
+
+/* Headline Section */
+.headline-section {
+    margin-bottom: 80px;
+    display: flex; /* Use flex for the intro text and the main heading */
+}
+
+.intro-text {
+    width: 40%; /* Space for the intro text on the left */
+    font-size: 0.9em;
+    margin-right: 50px;
+    line-height: 1.8;
+    padding-top: 20px;
+}
+
+.headline-section h1 {
+    font-family: Georgia, serif; /* A different serif for the headline */
+    font-size: 3.5em; /* Large, bold text */
+    font-weight: 300; /* Lighter weight for an elegant look */
+    line-height: 1.1;
+    width: 60%;
+    margin-top: 0;
+}
+
+/* Feature Columns */
+.feature-columns {
+    display: flex;
+    gap: 40px; /* Space between columns */
+    padding-top: 50px; /* Space from the headline */
+    border-top: 1px solid #eee; /* Separator line */
+}
+
+.feature-item {
+    flex: 1; /* Makes all items equal width */
+}
+
+.feature-item .number {
+    font-size: 0.9em;
+    margin-bottom: 20px;
+}
+
+.feature-item h2 {
+    font-family: Georgia, serif;
+    font-size: 1.5em;
+    font-weight: 400;
+    line-height: 1.3;
+    margin: 0 0 15px 0;
+}
+
+.feature-item .description {
+    font-size: 0.9em;
+    line-height: 1.7;
+}
+
+/* Dot Indicator for column 2 */
+.dot-indicator {
+    width: 10px;
+    height: 10px;
+    background-color: #000;
+    border-radius: 50%;
+    margin-top: 20px;
+    margin-left: auto; /* Center the dot */
+    margin-right: auto;
+}
+
+/* --- Nominee Badge --- 
+.nominee-badge {
+    position: fixed;
+    top: 0;
+    right: 0;
+    background-color: #000;
+    color: #fff;
+    padding: 20px 10px;
+    font-size: 0.9em;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    writing-mode: vertical-rl; /* Rotate text vertically 
+    text-orientation: mixed;
+    height: 100vh; /* Make it span the full height 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}*/
+
+/* --- Basic Responsiveness for smaller screens --- */
+@media (max-width: 1024px) {
+    .container {
+        flex-direction: column; /* Stack sidebar and content */
+    }
+
+    .sidebar {
+        width: 100%;
+        padding: 20px;
+        padding-top: 30px;
+        border-right: none;
+        border-bottom: 1px solid #eee;
+        display: flex; /* Arrange content horizontally */
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .sidebar nav {
+        margin-bottom: 0;
+        display: flex;
+        align-items: center;
+    }
+
+    .sidebar .section-title {
+        margin-right: 20px;
+        margin-bottom: 0;
+    }
+
+    .sidebar ul {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .sidebar li {
+        margin-right: 15px;
+        margin-bottom: 5px;
+    }
+
+    .contact-area {
+        margin-top: 0;
+    }
+
+    .content {
+        padding: 40px 20px;
+    }
+
+    .headline-section {
+        flex-direction: column; /* Stack intro text and headline */
+    }
+
+    .intro-text,
+    .headline-section h1 {
+        width: 100%;
+        margin-right: 0;
+    }
+
+    .headline-section h1 {
+        font-size: 2.5em;
+        margin-top: 30px;
+    }
+
+    .feature-columns {
+        flex-direction: column; /* Stack features vertically */
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ========================================================= */
+/* == GLOBAL & LOGO STYLING == */
+/* ========================================================= */
+
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #f8f8f8; /* Light gray background */
+    line-height: 1.4;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 40px;
+    padding: 20px;
+}
+
+header h1 {
+    font-size: 2em;
+    color: #000000;
+    margin-bottom: 5px;
+}
+
+header p {
+    color: #000000;
+    font-size: 1.1em;
+}
+
+
+/* ========================================================= */
+/* == GRID LAYOUT (The Engine) == */
+/* ========================================================= */
+
+.services-grid {
+    display: grid;
+    /* Responsive grid: columns are at least 280px wide and auto-fit the container */
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px; /* Space between the cards */
+    max-width: 1200px;
+    margin: 0 auto; /* Center the grid container */
+    padding: 0 10px;
+}
+
+
+/* ========================================================= */
+/* == SERVICE CARD STYLING (The Look) == */
+/* ========================================================= */
+
+.service-card {
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 12px; /* Soft, rounded corners */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05); /* Subtle shadow */
+    border: 1px solid #eee; /* Light border for definition */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    min-height: 220px; 
+}
+
+/* Hover Effect */
+.service-card:hover {
+    transform: translateY(-5px); /* Subtle lift on hover */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+
+    transform: rotateX(5deg) rotateY(5deg) scale(1.05);
+    box-shadow: 20px 20px 40px rgba(255, 0, 0, 0.3);
+
+
+}
+
+/* --- Icon & Text Styles --- */
+
+.icon-box {
+    width: 45px;
+    height: 45px;
+    margin-bottom: 15px;
+    /* This ensures the embedded SVG fills the container */
+}
+
+/* Style for the embedded SVG */
+.icon-box svg {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.service-card h3 {
+    font-size: 1.15em;
+    color: #000000;
+    margin: 0 0 8px 0;
+    font-weight: 700; 
+}
+
+.service-card p {
+    font-size: 0.95em;
+    color: #000000;
+    margin: 0;
+}
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ .body{
+    font-family: Arial, sans-serif; /* Use a common font */
+    margin: 0;
+    padding: 0;
+    background-color: #ffffff; /* White background */
+    color: #000000; /* Black text */
+}
+
+.faq-container {
+    max-width: 1200px;
+    margin: 50px auto;
+    padding: 20px;
+    color: #000;
+
+}
+
+.faq-container h1 {
+    font-size: 3em;
+    font-weight: bold;
+    margin-bottom: 50px;
+    line-height: 1.1;
+    color: #000;
+}
+
+/* Layout for "Get in touch" and FAQ list */
+.content-wrapper {
+    display: flex;
+    gap: 100px; /* Space between the two columns */
+}
+
+/* Get in touch column */
+.get-in-touch {
+    flex: 0 0 250px; /* Fixed width for the contact section */
+}
+
+.get-in-touch h2 {
+    font-size: 1.2em;
+    font-weight: normal;
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+
+.contact-button {
+    display: inline-block;
+    background-color: #000000;
+    color: #ffffff;
+    text-decoration: none;
+    padding: 15px 30px;
+    border-radius: 0; /* Sharp edges */
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.contact-button:hover {
+    background-color: #000000;
+}
+
+/* FAQ List Column */
+.faq-list {
+    flex-grow: 1; /* Takes up the remaining space */
+}
+
+/* Individual FAQ Item Styles */
+.faq-item {
+    padding: 20px 0;
+    cursor: pointer;
+    position: relative;
+    /* Reset padding for the highlighted item */
+    transition: background-color 0.3s; 
+}
+
+/* Highlighted FAQ Item */
+.faq-item.highlighted {
+    background-color: #e6e6ff; /* Light purple background */
+    padding: 20px; /* Add padding to the highlighted box */
+    margin: 0 -20px; /* Extend the background across the container width, adjust if needed */
+}
+
+/* Accordion Toggle (visually hidden) */
+.faq-toggle {
+    display: none;
+}
+
+.faq-question {
+    display: block;
+    font-size: 1.2em;
+    font-weight: normal;
+    padding-right: 30px; /* Space for the close icon */
+    position: relative;
+    line-height: 1.4;
+}
+
+.close-icon {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%) rotate(0deg); /* Start as a "close" icon (x) */
+    font-size: 1.5em;
+    font-weight: 300;
+    line-height: 1;
+    transition: transform 0.3s;
+}
+
+/* Optional: Change icon to a plus sign when closed/unchecked for a more traditional look */
+/* .faq-toggle:not(:checked) + .faq-question .close-icon {
+    content: '+';
+    transform: translateY(-50%) rotate(0deg);
+} */
+
+/* Answer Styles */
+.faq-answer {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease-out, padding 0.3s;
+}
+
+.faq-answer p {
+    margin-top: 10px;
+    font-size: 1em;
+    color: #000000;
+    font-weight: 400;
+    line-height: 1.5;
+}
+
+.faq-item.highlighted .faq-answer p {
+    color: #000000;
+}
+
+/* Style when FAQ is OPEN (checked) */
+.faq-toggle:checked ~ .faq-answer {
+    max-height: 1000px; /* Sufficiently large value */
+}
+
+/* Horizontal Separator */
+.faq-separator {
+    border: none;
+    border-top: 1px solid #eeeeee;
+    margin: 0;
+}
+
+/* Media Query for Responsiveness */
+@media (max-width: 768px) {
+    .faq-container h1 {
+        font-size: 2em;
+    }
+
+    .content-wrapper {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .get-in-touch {
+        flex: auto; /* Allow it to take full width */
+        margin-bottom: 20px;
+    }
+
+    .faq-item.highlighted {
+        margin: 0 -10px; /* Adjust margin for smaller screens if needed */
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+body {
+    font-family: 'Times New Roman', Times, serif; 
+    margin: 0;
+    padding: 0;
+    background-color: #fcfcfc;
+    color: #000000;
+    line-height: 1.5;
+}
+
+.project-grid-section {
+    max-width: 1400px;
+    margin: 80px auto;
+    padding: 0 40px;
+}
+
+/* --- Grid Layout --- */
+.project-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Three equal columns */
+    gap: 40px;
+}
+
+.project-item {
+    display: flex;
+    flex-direction: column;
+}
+
+/* --- Project Details & Typography --- */
+.project-details {
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #ddd;
+    min-height: 120px; /* Gives space for the text block */
+}
+
+.number {
+    font-size: 0.8em;
+    color: #000000;
+    margin-bottom: 5px;
+}
+
+.client-name {
+    font-family: Georgia, serif;
+    font-size: 1.1em;
+    font-weight: 600;
+    margin: 0 0 10px 0;
+    color: #000;
+}
+
+.description {
+    font-size: 0.9em;
+    color: #000000;
+}
+
+/* --- Project Visuals --- */
+.project-visual {
+    flex-grow: 1; /* Allows the visual area to fill the remaining space */
+    position: relative;
+    border-radius: 50px;
+}
+
+.project-image {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: cover;
+    border-radius: 10px 10px 10px 10px;
+}
+
+/* Dot Indicator for Project 2 */
+.indicator-dot {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 10px;
+    height: 10px;
+    background-color: #000;
+    border-radius: 50%;
+}
+
+/* --- View Link --- */
+.view-link {
+    display: block;
+    text-decoration: none;
+    color: #000;
+    font-size: 0.9em;
+    font-weight: bold;
+    padding-top: 20px;
+    margin-top: 10px; /* Space between image bottom and link */
+}
+
+/* --- Responsiveness --- */
+@media (max-width: 900px) {
+    .project-grid-section {
+        padding: 0 20px;
+    }
+
+    .project-grid {
+        grid-template-columns: 1fr; /* Stack columns vertically on smaller screens */
+        gap: 60px;
+    }
+    
+    .project-details {
+        min-height: auto;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Note: You'd need to link Font Awesome for the social icons (fab fa-...) */
+
+/* General Reset and Font/Color Setup */
+body {
+    margin: 0;
+    font-family: 'Helvetica Neue', Arial, sans-serif; /* Use a clean, modern font */
+    color: #c0c0c0; /* Light gray text for readability on dark background */
+}
+
+/* Footer Styling */
+footer {
+    background-color: #3b3a32; /* Dark, earthy green/brown background */
+    padding: 50px 80px 20px; /* Padding for top, sides, and bottom */
+    font-size: 14px;
+}
+
+/* Main Content Area (Mission + Nav Columns) */
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 50px;
+    border-bottom: 1px solid rgba(192, 192, 192, 0.2); /* Subtle separator line */
+}
+
+/* 1. Mission Statement Section */
+.footer-mission {
+    flex-basis: 30%; /* Take up about 30% of the width */
+    max-width: 400px;
+}
+
+.footer-mission h2 {
+    color: #ffffff; /* Brighter white for the main title */
+    font-size: 16px;
+    letter-spacing: 2px;
+    margin-top: 0;
+    margin-bottom: 30px;
+    font-weight: 500;
+}
+
+.footer-mission p {
+    line-height: 1.6;
+    margin-bottom: 30px;
+}
+
+/* Social Media Links */
+.social-links a {
+    color: #c0c0c0;
+    margin-right: 15px;
+    font-size: 18px;
+    transition: color 0.3s;
+}
+
+.social-links a:hover {
+    color: #ffffff;
+}
+
+/* 2. Navigation Columns Section */
+.footer-nav-columns {
+    display: flex;
+    justify-content: space-between;
+    flex-basis: 60%; /* Take up about 60% of the width */
+    margin-left: 50px; /* Space between mission and nav */
+}
+
+/*.nav-column {
+    /* Each column will size itself based on content 
+}*/
+
+
+.nav-column h3 {
+    color: #ffffff;
+    font-size: 14px;
+    letter-spacing: 1.5px;
+    margin-top: 0;
+    margin-bottom: 15px;
+    font-weight: 500;
+}
+
+.nav-column ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.nav-column ul li {
+    margin-bottom: 8px;
+}
+
+.nav-column ul li a {
+    color: #c0c0c0;
+    text-decoration: none;
+    transition: color 0.3s;
+    line-height: 1.5;
+}
+
+.nav-column ul li a:hover {
+    color: #ffffff;
+}
+
+/* Bottom Bar (Copyright and Development) */
+.footer-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 20px;
+    font-size: 12px;
+}
+
+.footer-bottom p {
+    margin: 0;
+}
+
+.settings-gear {
+    font-size: 20px;
+    color: #ffffff;
+    cursor: pointer;
+}
+
+/* Basic responsiveness for smaller screens (optional but recommended) */
+@media (max-width: 1000px) {
+    footer {
+        padding: 40px 40px 15px;
+    }
+    .footer-content {
+        flex-direction: column;
+    }
+    .footer-mission {
+        max-width: 100%;
+        margin-bottom: 40px;
+    }
+    .footer-nav-columns {
+        flex-wrap: wrap;
+        margin-left: 0;
+        gap: 30px;
+    }
+    .nav-column {
+        flex-basis: 45%; /* Two columns on smaller screens */
+    }
+    .footer-bottom {
+        flex-direction: column;
+        text-align: center;
+        gap: 10px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

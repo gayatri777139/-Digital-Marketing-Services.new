@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="order.js"></script>
+    <link rel="stylesheet" href="order.css">
+</head>
+<body>
+     <main class="contact-page">
+        <h1 class="main-heading">Let's start a conversation</h1>
+        <p class="sub-heading">– get in touch</p>
+
+        <form class="contact-form">
+            <div class="form-grid">
+                
+                <div class="form-fields">
+
+                    <div class="field-row name-fields">
+                        <label for="firstName">My name is</label>
+                        <input type="text" id="firstName" name="firstName" placeholder="First Name" required>
+                        <input type="text" id="lastName" name="lastName" placeholder="Last Name" required>
+                    </div>
+
+                    <div class="field-row company-field">
+                        <label for="companyName">The brand I am looking to photograph is</label>
+                        <input type="text" id="companyName" name="companyName" placeholder="Company name">
+                    </div>
+
+                    <div class="field-row contact-fields">
+                        <p class="field-label">You can reach me at</p>
+                        <input type="email" id="email" name="email" placeholder="email@mail.co*" required>
+                        <span class="or-separator">or</span>
+                        <input type="tel" id="phone" name="phone" placeholder="1202.123.4567">
+                    </div>
+
+                    <div class="field-group budget-group">
+                        <p class="field-label">My budget is:</p>
+                        <div class="selector-options budget-options">
+                            <label class="custom-radio">
+                                <input type="radio" name="budget" value="1200-2500">
+                                <span>$1,200-2,500</span>
+                            </label>
+                            <label class="custom-radio">
+                                <input type="radio" name="budget" value="2500-5000">
+                                <span>$2,500-5,000</span>
+                            </label>
+                            <label class="custom-radio">
+                                <input type="radio" name="budget" value="5000+">
+                                <span>$5,000+</span>
+                            </label>
+                        </div>
+                    </div>
+
+                    <div class="field-group interest-group">
+                        <p class="field-label">I am primarily interested in</p>
+                        <div class="selector-options interest-options">
+                            <label class="custom-checkbox">
+                                <input type="checkbox" name="interest" value="Beauty">
+                                <span>Beauty</span>
+                            </label>
+                            <label class="custom-checkbox">
+                                <input type="checkbox" name="interest" value="Cosmetics">
+                                <span>Cosmetics</span>
+                            </label>
+                            <label class="custom-checkbox">
+                                <input type="checkbox" name="interest" value="Ecommerce">
+                                <span>Ecommerce</span>
+                            </label>
+                            <label class="custom-checkbox">
+                                <input type="checkbox" name="interest" value="Food & Beverage">
+                                <span>Food & Beverage</span>
+                            </label>
+                            <label class="custom-checkbox">
+                                <input type="checkbox" name="interest" value="Product">
+                                <span>Product</span>
+                            </label>
+                        </div>
+                    </div>
+
+                    <div class="field-group vision-group">
+                        <label for="visionText" class="field-label">My vision is</label>
+                        <p class="placeholder-text">Please tell me more about your project.</p>
+                        <textarea id="visionText" name="visionText" rows="4"></textarea>
+                        <div class="dot-indicator"></div>
+                    </div>
+                    
+                    <div class="form-footer">
+                        <div class="recaptcha-placeholder">
+                            <div class="recaptcha-box">
+                                <input type="checkbox">
+                                <span>I'm not a robot</span>
+                            </div>
+                            <div class="recaptcha-logo">
+                                <small>reCAPTCHA<br>Privacy - Terms</small>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="side-content">
+                    <ul class="location-list">
+                        <li><span>•</span> Vancouver, BC</li>
+                        <li><span>•</span> Toronto, ON</li>
+                        <li><span>•</span> Los Angeles, CA</li>
+                        <li><span>•</span> Seattle, WA</li>
+                    </ul>
+
+                    <div class="social-links">
+                        <p>Instagram</p>
+                        <p>LinkedIn</p>
+                    </div>
+
+                    <p class="about-text">
+                        My approach emphasizes precision and attention to detail, ensuring every image highlights the product’s unique qualities while maintaining a cohesive visual style.
+                    </p>
+
+                    <div class="submit-area">
+                        <button type="submit" class="submit-circle">
+                            Submit Form
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </main>
+</script>
+</body>
+</html>

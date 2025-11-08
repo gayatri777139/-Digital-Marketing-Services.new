@@ -1,0 +1,405 @@
+.body{
+    /* Using a system serif font (like Times New Roman or Georgia) to match the elegant look */
+    font-family: 'Times New Roman', Times, serif; 
+    margin: 0;
+    padding: 0;
+    color: #000;
+    line-height: 1.6;
+    background-color: #fff;
+    font-size: 16px;
+}
+
+.contact-page {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 80px 40px;
+}
+
+.main-heading {
+    font-family: Georgia, serif;
+    font-size: 3.5em;
+    font-weight: 300; /* Light weight for elegance */
+    margin: 0 0 5px 0;
+}
+
+.sub-heading {
+    font-size: 1em;
+    font-style: italic;
+    margin: 0 0 80px 0;
+    padding-left: 2px;
+}
+
+/* --- Form Grid Layout --- */
+.contact-form {
+    border-top: 1px solid #ccc; /* Separator line */
+    padding-top: 50px;
+}
+
+.form-grid {
+    display: flex;
+    gap: 80px;
+}
+
+.form-fields {
+    width: 60%;
+    flex-shrink: 0;
+}
+
+.side-content {
+    width: 40%;
+    padding-top: 30px;
+    position: relative;
+}
+
+/* --- Field Styling --- */
+.field-row {
+    margin-bottom: 50px;
+}
+
+.field-label {
+    margin: 0 0 10px 0;
+    font-weight: normal;
+    font-size: 1em;
+}
+
+/* Name Fields Specific Styling */
+.name-fields label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.name-fields input {
+    width: calc(50% - 10px);
+    border: none;
+    border-bottom: 1px solid #000;
+    padding: 10px 0;
+    font-size: 1em;
+    font-family: inherit;
+    display: inline-block;
+}
+
+.name-fields input:first-of-type {
+    margin-right: 20px;
+}
+
+/* Company Field Specific Styling */
+.company-field input {
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid #000;
+    padding: 10px 0;
+    font-size: 1em;
+    font-family: inherit;
+}
+
+/* Contact Fields Specific Styling */
+.contact-fields {
+    display: flex;
+    align-items: flex-end;
+    flex-wrap: wrap;
+}
+
+.contact-fields .field-label {
+    width: 100%;
+}
+
+.contact-fields input {
+    border: none;
+    border-bottom: 1px solid #000;
+    padding: 10px 0;
+    font-size: 1em;
+    font-family: inherit;
+}
+
+.contact-fields input[type="email"] {
+    width: 45%;
+    margin-right: 15px;
+}
+
+.contact-fields input[type="tel"] {
+    width: 45%;
+    margin-left: 15px;
+}
+
+.or-separator {
+    text-transform: uppercase;
+    font-size: 0.8em;
+    color: #666;
+    margin: 0 10px;
+}
+
+/* Remove default focus styles and use bottom border */
+input:focus {
+    outline: none;
+    /* Optional: can add a slightly thicker or colored border on focus */
+}
+
+input::placeholder, textarea::placeholder {
+    color: #aaa; /* Lighter placeholder text */
+}
+
+/* --- Budget & Interest Selectors (Custom Radios/Checkboxes) --- */
+.field-group {
+    margin-bottom: 50px;
+}
+
+.selector-options {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.custom-radio, .custom-checkbox {
+    display: block; /* Allows labels to wrap nicely */
+}
+
+.custom-radio input, .custom-checkbox input {
+    display: none; /* Hide native input */
+}
+
+.custom-radio span, .custom-checkbox span {
+    border: 1px solid #000;
+    padding: 10px 15px;
+    cursor: pointer;
+    font-size: 0.9em;
+    transition: background-color 0.2s, color 0.2s;
+    display: block;
+}
+
+/* Style for the selected state */
+.custom-radio input:checked + span, .custom-checkbox input:checked + span {
+    background-color: #000;
+    color: #fff;
+}
+
+
+/* --- Vision Textarea --- */
+.vision-group {
+    position: relative;
+    border-bottom: 1px solid #000;
+    margin-bottom: 10px;
+}
+
+.vision-group textarea {
+    width: 100%;
+    border: none;
+    padding: 10px 0;
+    font-size: 1em;
+    font-family: inherit;
+    resize: none;
+    overflow: hidden; 
+    min-height: 1.5em; /* Ensure initial height */
+}
+
+.vision-group textarea:focus {
+    outline: none;
+}
+
+.vision-group .placeholder-text {
+    position: absolute;
+    top: 35px; /* Adjust based on label height */
+    left: 0;
+    color: #ccc;
+    pointer-events: none;
+    transition: opacity 0.2s;
+}
+
+/* Hide placeholder when input has content or is focused */
+.vision-group textarea:focus ~ .placeholder-text, 
+.vision-group textarea:not(:placeholder-shown) ~ .placeholder-text {
+    opacity: 0;
+}
+
+
+/* Dot indicator below the textarea */
+.vision-group .dot-indicator {
+    position: absolute;
+    bottom: -15px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 10px;
+    height: 10px;
+    background-color: #000;
+    border-radius: 50%;
+}
+
+/* --- reCAPTCHA Placeholder --- */
+.form-footer {
+    margin-top: 50px;
+}
+
+.recaptcha-placeholder {
+    width: 280px;
+    border: 1px solid #ccc;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 0.8em;
+    color: #666;
+}
+
+.recaptcha-box {
+    display: flex;
+    align-items: center;
+}
+
+.recaptcha-box input {
+    width: 25px;
+    height: 25px;
+    margin-right: 10px;
+    border: 2px solid #ccc;
+}
+
+.recaptcha-logo {
+    text-align: right;
+    line-height: 1.2;
+}
+
+/* --- Right Side Content --- */
+.location-list {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 50px 0;
+    font-size: 0.9em;
+}
+
+.location-list li {
+    margin-bottom: 10px;
+}
+
+.location-list li span {
+    font-size: 1.5em;
+    line-height: 0;
+    vertical-align: middle;
+    margin-right: 5px;
+}
+
+.social-links {
+    position: absolute;
+    top: 50px; 
+    right: 0;
+    text-align: right;
+    font-size: 0.9em;
+}
+
+.social-links p {
+    margin: 0 0 10px 0;
+}
+
+.about-text {
+    margin-top: 150px;
+    padding-right: 50px;
+    font-size: 0.9em;
+    line-height: 1.8;
+}
+
+/* --- Submit Button (The large circle) --- */
+.submit-area {
+    position: absolute;
+    bottom: -100px;
+    right: 0;
+}
+
+.submit-circle {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background: none;
+    border: 1px solid #000;
+    cursor: pointer;
+    font-family: inherit;
+    font-style: italic;
+    font-size: 1.5em;
+    line-height: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s;
+}
+
+.submit-circle:hover {
+    background-color: #000;
+    color: #fff;
+    transform: scale(1.05);
+}
+
+/* Smaller dot indicator on the right side (near the submit button area) */
+.side-content::after {
+    content: "";
+    position: absolute;
+    right: 250px; 
+    bottom: 25px; 
+    width: 5px;
+    height: 5px;
+    background-color: #000;
+    border-radius: 50%;
+}
+
+
+/* --- Basic Responsiveness --- */
+@media (max-width: 900px) {
+    .contact-page {
+        padding: 40px 20px;
+    }
+    
+    .main-heading {
+        font-size: 2.5em;
+    }
+    
+    .form-grid {
+        flex-direction: column;
+        gap: 40px;
+    }
+
+    .form-fields, .side-content {
+        width: 100%;
+        padding-top: 0;
+    }
+    
+    .field-row {
+        margin-bottom: 30px;
+    }
+    
+    .name-fields input,
+    .contact-fields input[type="email"],
+    .contact-fields input[type="tel"] {
+        width: 100%; /* Full width on smaller screens */
+        margin-right: 0;
+        margin-left: 0;
+        margin-top: 10px;
+    }
+
+    .or-separator {
+        display: none; /* Hide 'or' separator */
+    }
+
+    /* Right column content stacking */
+    .social-links {
+        position: static;
+        text-align: left;
+        margin-top: 30px;
+    }
+
+    .about-text {
+        margin-top: 30px;
+        padding-right: 0;
+    }
+
+    .submit-area {
+        position: static;
+        text-align: center;
+        margin-top: 50px;
+    }
+    
+    /* Hide the extra dot on mobile */
+    .side-content::after {
+        display: none; 
+    }
+    
+    /* Center the recaptcha */
+    .form-footer {
+        display: flex;
+        justify-content: center;
+    }
+}
